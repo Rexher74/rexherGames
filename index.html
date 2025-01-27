@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>Rexher Games</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -24,6 +25,7 @@
             #contentsDiv{
                 padding: 5%;
                 text-align: center;
+                max-width: 500px;
             }
             #title{
                 font-size: 50px;
@@ -120,10 +122,10 @@
                         <div class="gameTitle" id="bblaster">BBlaster</div>
                     </div>
                     <div class="game">
-                        <div class="gameTitle" id="trik">Trik</div>
+                        <div class="gameTitle" id="trik">Ushoot</div>
                     </div>
                 </div>
-                <div id="alert">Currently, only InvestIO, Virutz and Trik work on all devices.<br>
+                <div id="alert">Currently, only InvestIO, Virutz and Ushoot work on all devices.<br>
                                 Flyly, BBlaster and Bouncify only work on Computer devices</div>
             </div>
         </div>
@@ -132,6 +134,8 @@
             var flylyLink = document.getElementById("flyly");
             var investioLink = document.getElementById("investio");
             var bouncifyLink = document.getElementById("bouncify");
+            var bblasterLink = document.getElementById("bblaster");
+            var ushootLink = document.getElementById("bouncify");
 
             virutzLink.onclick = function() {
                 location.href = "http://virutz.netlify.app";
@@ -147,6 +151,14 @@
 
             bouncifyLink.onclick = function() {
                 location.href = "https://rexher74.github.io/bouncify/";
+            }
+
+            bblasterLink.onclick = function() {
+                location.href = "https://bblaster.netlify.app";
+            }
+
+            ushootLink.onclick = function() {
+                location.href = "https://ushoot.netlify.app";
             }
             
         </script>
